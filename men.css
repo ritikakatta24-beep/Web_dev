@@ -1,35 +1,137 @@
+html, body
+ { 
+    height: 100%;
+ }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #FFF2DB;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      font-family: "Serif", Georgia;
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #121111;
+      font-family: "Serif", Georgia;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: rgb(249, 247, 247);
+    }
+
+:root{
+  --accent: #5b2b84;      
+  --muted: #666666;
+  --bg: #f9f9f9;
+  --card: #ffffff;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --max-width: 980px;
+}
+
+
+* 
+{ 
+    box-sizing: border-box;
+     margin: 0; padding: 0; 
+    }
+html, body
+ { 
+    height: 100%;
+ }
 body {
-    background-color: #296B7A;
-    color: white;
-    font-size: 25px;
-    font-family: serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #FFF2DB;
+  color: #111;
+ 
 }
 header {
-    background-color: #1F2C5A;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ 
+  position: sticky;
+  top: 0;
+  z-index: 80;
 }
-header h1 {
-    margin: 0;
+header {
+  background: linear-gradient(135deg, #f2c300,#f2c300);
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: white;
 }
-nav {
-    display: flex;
-    gap: 30px;
-}
-
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  color: rgb(250, 21, 21);
+  font-weight: bold;
+  background: rgba(74, 70, 70, 0.15);
+  padding: 8px 16px;
+  border-radius: 45px;
+  transition: all 0.3s ease;
 }
 
-main {
-    padding: 40px 20px;
-    text-align: center;
+h1 {
+  font-family: "Serif", Georgia;
+  font-size: 34px;
+  color: var(--accent);
+  margin: 0;
+}
+header p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.95;
+}
+
+
+nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;    
+  color: #111;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color .15s ease, color .15s ease, transform .12s ease;
+}
+
+
+header > div:last-child a {
+  text-decoration: none;     
+  font-size: 20px;
+  color: var(--accent);
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-grid {
@@ -41,7 +143,7 @@ main {
 }
 
 .product-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #E6B45A;
     padding: 20px;
     border-radius: 8px;
 }
@@ -67,16 +169,16 @@ main {
     font-family: Georgia;
 }
 .price-gold {
-    color: #C9E7ED;
+    color: #8E6415;
 }
 .price-teal {
-    color: #C9E7ED;
+    color: #8E6415;
 }
 .price-cyan {
-    color: #C9E7ED;
+    color: #8E6415;
 }
 .price-olive {
-    color: #C9E7ED;
+    color: #8E6415;
 }
 
 .product-card:hover {
@@ -85,9 +187,17 @@ main {
 }
 
 .product-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #E6B45A;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 18px 12px;
+  margin-top: 36px;
+  font-size: 14px;
 }
