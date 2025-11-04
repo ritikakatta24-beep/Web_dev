@@ -6,8 +6,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
-
 header {
     background-color: #1F2C5A;
     padding: 30px;
@@ -15,11 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header h1 {
     margin: 0;
 }
-
 nav {
     display: flex;
     gap: 30px;
@@ -30,7 +26,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 main {
     padding: 40px 20px;
@@ -71,8 +66,6 @@ main {
     font-weight: bold;
     font-family: Georgia;
 }
-
-
 .price-gold {
     color: #C9E7ED;
 }
@@ -84,4 +77,17 @@ main {
 }
 .price-olive {
     color: #C9E7ED;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
