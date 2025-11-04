@@ -90,7 +90,7 @@ nav .nav-links {
   font-weight: 700;
   font-size: 14px;
   padding: 8px 18px;
-  border-radius: 999px;
+  border-radius: 99px;
   background: rgba(125,115,125,0.10);
   border: 2px solid rgba(75,26,108,0.10);
   transition: transform .15s ease, background .15s ease;
